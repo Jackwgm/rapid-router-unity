@@ -17,6 +17,7 @@ public class Installer : MonoInstaller
         Container.Bind<RoadBuilder>().ToSingleGameObject();
         Container.Bind<RoadDrawer>().ToSingleGameObject();
         Container.Bind<DecorDrawer>().ToSingleGameObject();
+        Container.Bind<HouseDrawer>().ToSingleGameObject();
         InstallSettings();
     }
 
@@ -56,6 +57,7 @@ public class Installer : MonoInstaller
             public GameObject tJunctionTile;
             public GameObject crossRoadTile;
             public GameObject cfcTile;
+            public GameObject houseTile;
         }
 
         [Serializable]
